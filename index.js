@@ -1,9 +1,9 @@
 const cron = require('node-cron');
 const twilio = require('twilio');
 const readline = require('readline');
-require('dotenv').config(); // Load environment variables
+require('dotenv').config(); 
 
-// Twilio credentials from environment variables
+
 const accountSid = process.env.TWILIO_ACCOUNT_SID;
 const authToken = process.env.TWILIO_AUTH_TOKEN;
 const client = twilio(accountSid, authToken);
