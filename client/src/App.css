@@ -148,13 +148,109 @@ body {
   }
 }
 
+/* drip.css styling */
+
+.form-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.form-items:nth-child(1){
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  order: 0;
+  align-self: center;
+  margin-top: 3%;
+}
+
+.form-items:nth-child(2){
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  order: 0;
+  align-self: center;
+  margin-top: 2%;
+  margin-left: 25%;
+  align-content: center;
+}
+.form-items:nth-child(3){
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  order: 0;
+  align-self: center;
+  margin-top: 2%;
+  margin-left: 25%;
+  align-content: center;
+}
+
+.form-items:nth-child(4){
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  order: 0;
+  align-self: center;
+  margin-top: 2%;
+  margin-left: 25%;
+  align-content: center;
+}
+
+.form-items:nth-child(5){
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  order: 0;
+  align-self: center;
+  margin-top: 2%;
+  margin-left: 20%;
+  align-content: center;
+}
 
 
 
+#drip-logo{
+  width: 246.57px;
+  height: auto;
+  max-width: 100%;
+}
 
+#submit{
+  margin-left: 45%;
+  margin-top: 5%;
+}
 
+#interval{
+  margin-left: 25%;
+  margin-top: 5%;
+}
 
+input[type=text], select {
+  width: 75%;
+  padding: 10px 15px;
+  margin: 5px 0;
+  border: 1px solid black;
+  border-radius: 4px;
+}
 
+input[type=number] {
+  width: 75%;
+  color: black;
+  padding: 10px 15px;
+  margin: 5px 0;
+  border: 1px solid black;
+  border-radius: 4px;
+}
 
 
 

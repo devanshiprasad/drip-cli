@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import './App.css';
+import logo from './images/logo.png';
 
 function Drip() {
     const [interval, setInterval] = useState('');
@@ -27,11 +28,14 @@ function Drip() {
 
     return (
         <div className="form-container">
-        <h1 id='drip'>Water Reminder App</h1>
+            <div className='form-items'>
+            <img src={logo} id='drip-logo'/>
+            </div>
+       
         <form onSubmit={handleSubmit} className="flex">
-            <div className='flex-items'>
+            <div className='form-items' id='interval'> 
                 <label>
-                    Interval (in minutes):
+                    Interval (in minutes): 
                     <input
                         type="number"
                         placeholder="Interval (in minutes)"
@@ -41,7 +45,7 @@ function Drip() {
                     />
                 </label>
             </div>
-            <div className='flex-items'>
+            <div className='form-items' id='start'>
                 <label>
                     Start Time (24hr):
                     <input
@@ -53,7 +57,7 @@ function Drip() {
                     />
                 </label>
             </div>
-            <div className='flex-items'>
+            <div className='form-items' id='end'>
                 <label>
                     End Time (24hr):
                     <input
@@ -65,19 +69,19 @@ function Drip() {
                     />
                 </label>
             </div>
-            <div className='flex-items'>
+            <div className='form-items' id='number'>
                 <label>
                     Your WhatsApp Number (prefix your country code without a "+" or space):
                     <input
                         type="text"
-                        placeholder="Your WhatsApp Number"
+                        placeholder="Your WhatsApp Number (for eg: 91xxxxxxxxxx)"
                         value={phoneNumber}
                         onChange={(e) => setPhoneNumber(e.target.value)}
                         required
                     />
                 </label>
             </div>
-            <button type="submit">Set Reminder</button>
+            <button type="submit" className='bn54' id='submit'>Set Reminder</button>
         </form>
     </div>
     );
