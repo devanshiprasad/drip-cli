@@ -1,9 +1,9 @@
-
 const express = require('express');
 const cron = require('node-cron');
 const twilio = require('twilio');
 const bodyParser = require('body-parser');
 const cors = require('cors');
+const rateLimit = require('express-rate-limit'); // Import rate limiter
 require('dotenv').config();
 
 const app = express();
@@ -17,14 +17,18 @@ const client = twilio(accountSid, authToken);
 app.use(cors()); 
 app.use(bodyParser.json()); 
 
-// API endpoint
-app.post('/api/reminder', (req, res) => {
+// Rate Limiter Middleware
+const limiter = rateLimit({
+    windowMs: 15 * 60 * 1000, // 15 minutes
+    max: 5, 
+    message: 'Too many requests from this IP, please come back later!'
+});
+
+app.post('/api/reminder', limiter, (req, res) => {
     const { interval, startTime, endTime, phoneNumber } = req.body;
 
-   
     const cronExpression = `* ${startTime}-${endTime}/${interval} * * *`;
 
-   
     cron.schedule(cronExpression, () => {
         console.log('Cron job triggered for reminder.');
 
