@@ -1,38 +1,207 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body {
+    background-image: url('./images/bg.png');
+    background-size:cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Flex container styling */
+.flex-container {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Flex items */
+.flex-items:nth-child(1) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  order: 0;
+  align-self: center;
+  margin-top: 3%;
+}
+
+.flex-items:nth-child(2) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  order: 0;
+  align-self: center;
+}
+.flex-items:nth-child(3){
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  order: 0;
+  align-self: center;
+  margin-top: 2%;
+
+}
+/* Logo styling */
+#logo {
+  width: 246.57px;
+  height: auto;
+  max-width: 100%;
+}
+
+#qr{
+  width: 150px;
+  height: auto;
+  max-width: 100%;
+  border: 4px solid #3498db;
+  border-radius: 8px;
+}
+
+#para{
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Bold", sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+
+}
+#qr-text{
+  color: #3498db;
+  text-align: center;
+  font-family: "Inter-Bold", sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+
+}
+
+.bn54 {
+  outline: none;
+  text-decoration: none;
+  border-radius: 50px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  height: 60px;
+  width: 145px;
+  opacity: 1;
+  background-color: #ffffff;
+  border: 2px solid rgba(0, 0, 0, 0.6);
+  margin-top: 20%;
 }
 
-.App-link {
-  color: #61dafb;
+.bn54 .bn54span {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #000000;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.7px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.bn54:hover {
+  animation: bn54rotate 0.7s ease-in-out both;
+  background-color: #AAD6F5;
+}
+
+.bn54:hover .bn54span {
+  animation: bn54storm 0.7s ease-in-out both;
+  animation-delay: 0.06s;
+  color: #ffffff;
+}
+
+@keyframes bn54rotate {
+  0% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
   }
-  to {
-    transform: rotate(360deg);
+  25% {
+    transform: rotate(3deg) translate3d(0, 0, 0);
+  }
+  50% {
+    transform: rotate(-3deg) translate3d(0, 0, 0);
+  }
+  75% {
+    transform: rotate(1deg) translate3d(0, 0, 0);
+  }
+  100% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+}
+
+@keyframes bn54storm {
+  0% {
+    transform: translate3d(0, 0, 0) translateZ(0);
+  }
+  25% {
+    transform: translate3d(4px, 0, 0) translateZ(0);
+  }
+  50% {
+    transform: translate3d(-3px, 0, 0) translateZ(0);
+  }
+  75% {
+    transform: translate3d(2px, 0, 0) translateZ(0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) translateZ(0);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .flex-container {
+    padding: 10px;
+  }
+  
+  /* Adjust the logo for mobile */
+  #logo {
+    width: 200px;
+  }
+
+  #qr{
+    width:100px;
+  }
+  #para{
+    font-size: 10px;
+  }
+
+  .bn54{
+    height: 30px;
+    width: 125px;
+  }
+  /* Adjust flex item alignment */
+  .flex-items:nth-child(1), .flex-items:nth-child(2) {
+    align-self: center;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  #logo {
+    width: 250px;
+  }
+  #qr{
+    width: 200px
+  }
+
+  #para{
+    font-size: 20px;
+  }
+
+  .flex-items:nth-child(1), .flex-items:nth-child(2) {
+    align-self: center;
   }
 }
