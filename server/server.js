@@ -9,8 +9,8 @@ require('dotenv').config();
 const app = express();
 const port = process.env.PORT || 3001;
 
-const accountSid = process.env.TWILIO_ACCOUNT_SID;
-const authToken = process.env.TWILIO_AUTH_TOKEN;
+const accountSid = ACeb1cdcbbf01f15e39f1e012f2afc224f;
+const authToken = '5b5507c069a7f5820911cae5ec4eaf8e';
 const client = twilio(accountSid, authToken);
 
 // Middleware
@@ -35,7 +35,7 @@ app.post('/api/reminder', limiter, (req, res) => {
         client.messages
             .create({
                 body: 'Reminder: Take a break and drink water!',
-                from: process.env.TWILIO_PHONE_NUMBER,
+                from: 'whatsapp:+14155238886',
                 to: `whatsapp:${phoneNumber}`,
             })
             .then(message => console.log(`Reminder sent: ${message.sid}`))
