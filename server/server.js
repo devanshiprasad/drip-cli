@@ -46,5 +46,5 @@ app.post('/api/reminder', limiter, (req, res) => {
 });
 
 app.listen(port, () => {
-    console.log(`Server is running on http://localhost:${port}`);
+    console.log(`Server is running on http://52.66.242.39:${port}`);
 });
