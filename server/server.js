@@ -46,5 +46,5 @@ app.post('/api/reminder', limiter, (req, res) => {
 });
 
 app.listen(port, () => {
-    console.log(`Server is running on http://52.66.242.39:${port}`);
+    console.log(`Server is running on http://3.110.37.144:${port}`);
 });
