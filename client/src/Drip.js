@@ -13,7 +13,7 @@ function Drip() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://3.110.37.144:3001/api/reminder', {
+            const response = await axios.post('http://43.204.31.197:3001/api/reminder', {
                 interval,
                 startTime,
                 endTime,
