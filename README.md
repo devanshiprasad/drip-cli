@@ -1,9 +1,6 @@
 # Drip💧: A water reminder application with CI/CD Pipeline
 ![Group 38 (1)](https://github.com/user-attachments/assets/aca63b9f-8389-49f8-8850-411b53026677)
 
-![drip-phone](https://github.com/user-attachments/assets/caffd71f-16cd-4075-907e-5803708cdea3)
-
-
 # Project Overview💧
 -> This project is a WhatsApp Reminder Application that lets users set up periodic reminders sent to their phone numbers via WhatsApp.
 -> The application is built with Node.js and React, integrated with Twilio for messaging, and uses a Jenkins CI/CD pipeline for seamless deployment on AWS EC2. 
