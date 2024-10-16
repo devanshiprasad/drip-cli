@@ -27,7 +27,7 @@ const limiter = rateLimit({
 app.post('/api/reminder', limiter, (req, res) => {
     const { interval, startTime, endTime, phoneNumber } = req.body;
 
-    const cronExpression = `* ${startTime}-${endTime}/${interval} * * *`;
+    const cronExpression = `*/${interval} * * * *`;
 
     cron.schedule(cronExpression, () => {
         console.log('Cron job triggered for reminder.');
