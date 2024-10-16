@@ -10,10 +10,10 @@
 https://github.com/user-attachments/assets/6af6a45c-68c4-484e-a3a0-3458c4e26547
 
 # Features🔧
--> **Customizable Reminders:** Set interval, start time, and end time for reminders.
--> **WhatsApp Notifications:** Receive reminders directly on your WhatsApp using Twilio.
--> **Rate Limiting:** Prevents excessive requests and helps avoid spam.
--> **CI/CD Pipeline:** Automated deployment with Jenkins, Docker, and Docker Compose.
+1. **Customizable Reminders:** Set interval, start time, and end time for reminders. 
+2. **WhatsApp Notifications:** Receive reminders directly on your WhatsApp using Twilio.
+3. **Rate Limiting:** Prevents excessive requests and helps avoid spam.
+4. **CI/CD Pipeline:** Automated deployment with Jenkins, Docker, and Docker Compose.
 
 # Project Structure💦
 ````
