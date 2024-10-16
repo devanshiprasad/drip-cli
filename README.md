@@ -2,10 +2,10 @@
 ![Group 38 (1)](https://github.com/user-attachments/assets/aca63b9f-8389-49f8-8850-411b53026677)
 
 # Project Overview💧
--> This project is a WhatsApp Reminder Application that lets users set up periodic reminders sent to their phone numbers via WhatsApp.
--> The application is built with Node.js and React, integrated with Twilio for messaging, and uses a Jenkins CI/CD pipeline for seamless deployment on AWS EC2. 
--> Docker containers ensure consistent performance across all environments.
--> Github webhook ensures seamless integration with Jenkins. 
+1. This project is a WhatsApp Reminder Application that lets users set up periodic reminders sent to their phone numbers via WhatsApp.
+2. The application is built with Node.js and React, integrated with Twilio for messaging, and uses a Jenkins CI/CD pipeline for seamless deployment on AWS EC2. 
+3. Docker containers ensure consistent performance across all environments.
+4. Github webhook ensures seamless integration with Jenkins. 
 
 https://github.com/user-attachments/assets/6af6a45c-68c4-484e-a3a0-3458c4e26547
 
@@ -38,11 +38,11 @@ Drip-Reminder-App/
 `````
 
 # Technology Stack🛠️ 
--> **Backend:** Node.js, Express.js, Twilio API
--> **Frontend:** React, Axios
--> **Containerization:** Docker, Docker Compose
--> **CI/CD:** Jenkins
--> **Deployment:** Hosted on AWS EC2
+1. **Backend:** Node.js, Express.js, Twilio API
+2. **Frontend:** React, Axios
+3. **Containerization:** Docker, Docker Compose
+4. **CI/CD:** Jenkins
+5. **Deployment:** Hosted on AWS EC2
 
 # Pipeline Flowchart💦
 ![drip](https://github.com/user-attachments/assets/489d5238-7b27-4cd0-a486-c787ea5ff039)
